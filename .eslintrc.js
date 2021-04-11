@@ -15,6 +15,22 @@ module.exports = {
 				extensions: ['.js', '.jsx', '.ts', '.tsx']
 			}
 		],
-		'no-use-before-define': 'off'
+		'no-use-before-define': 'off',
+		'import/extensions': [
+			'error',
+			{
+				js: 'never',
+				jsx: 'never',
+				ts: 'never',
+				tsx: 'never'
+			}
+		]
+	},
+	settings: {
+		'import/resolver': {
+			node: {
+				extensions: ['.js', '.jsx', '.ts', '.tsx']
+			}
+		}
 	}
 };
